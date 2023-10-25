@@ -29,6 +29,7 @@ public class CountryController {
 	@PostMapping("/save-country")
 	public String createCountry(@RequestBody Country country) {
 		System.out.println("hi");
+		System.out.println("bi");
 		String msg =service.createCountry(country);
 		
 		return msg;	
