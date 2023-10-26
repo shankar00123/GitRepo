@@ -1,8 +1,8 @@
 package com.angular.ojt.AngularBackend.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,12 +10,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.angular.ojt.AngularBackend.entity.Country;
 import com.angular.ojt.AngularBackend.service.CountryService;
-import com.angular.ojt.AngularBackend.service.EmpService;
 
 
 
@@ -30,6 +28,7 @@ public class CountryController {
 	public String createCountry(@RequestBody Country country) {
 		System.out.println("hi");
 		System.out.println("bi");
+		System.out.println("india");
 		String msg =service.createCountry(country);
 		
 		return msg;	
